@@ -23,7 +23,7 @@ class SafeAreaView extends React.Component {
   };
 
   render() {
-    return React.createElement('SafeAreaView', null, this.props.children);
+    return React.createElement('SafeAreaView', this.props, this.props.children);
   }
 }
 

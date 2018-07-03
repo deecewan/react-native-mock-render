@@ -101,7 +101,7 @@ const Navigator = createReactClass({
     SceneConfigs: NavigatorSceneConfigs,
   },
   render() {
-    return React.createElement('Navigator', null, this.props.children);
+    return React.createElement('Navigator', this.props, this.props.children);
   }
 });
 

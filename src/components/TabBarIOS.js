@@ -12,7 +12,7 @@ const TabBarIOS = createReactClass({
     Item: createMockComponent('TabBarIOS.Item')
   },
   render() {
-    return React.createElement('TabBarIOS', null, this.props.children);
+    return React.createElement('TabBarIOS', this.props, this.props.children);
   }
 });
 

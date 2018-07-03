@@ -138,7 +138,7 @@ const FlatList = createReactClass({
   },
 
   render() {
-    return React.createElement('FlatList', null, this._renderChildren());
+    return React.createElement('FlatList', this.props, this._renderChildren());
   },
 });
 

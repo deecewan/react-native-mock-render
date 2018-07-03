@@ -139,7 +139,7 @@ const WebView = createReactClass({
   },
 
   render() {
-    return React.createElement('WebView', null, this.props.children);
+    return React.createElement('WebView', this.props, this.props.children);
   },
 });
 
