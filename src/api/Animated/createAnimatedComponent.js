@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 function createAnimatedComponent(Component) {
   class AnimatedComponent extends React.Component {
+    static displayName = `Animated.${Component.displayName}`;
     static propTypes = {
       children: PropTypes.node,
     }
@@ -11,7 +12,9 @@ function createAnimatedComponent(Component) {
     }
 
     render() {
-      return (
+      return React.createElement(
+        `Animated.${Component.displayName}`,
+        this.props,
         <Component
           ref={() => {}}
         >
