@@ -332,6 +332,10 @@ const ScrollView = createReactClass({
     });
   },
 
+  flashScrollIndicators() {
+    // no-op
+  },
+
   render() {
     return React.createElement('ScrollView', this.props, this.props.children);
   },
