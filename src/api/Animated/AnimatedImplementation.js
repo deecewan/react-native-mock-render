@@ -1091,6 +1091,14 @@ function decay(value, config) {
   };
 }
 
+function loop(value, config) {
+  return {
+    start() { },
+
+    stop() { },
+  };
+}
+
 function sequence(animations) {
   let current = 0;
   return {
@@ -1183,6 +1191,7 @@ const AnimatedImplementation = {
   Value: AnimatedValue,
   ValueXY: AnimatedValueXY,
   decay,
+  delay,
   timing,
   spring,
   add,
@@ -1191,6 +1200,7 @@ const AnimatedImplementation = {
   parallel,
   stagger,
   event,
+  loop,
 
   ...testingMethods,
   __PropsOnlyForTests: AnimatedProps,

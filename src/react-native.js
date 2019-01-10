@@ -34,6 +34,7 @@ const ReactNative = {
   RefreshControl: createMockComponent('RefreshControl'),
   SafeAreaView: createMockComponent('SafeAreaView'),
   ScrollView: require('./components/ScrollView'),
+  SectionList: require('./components/SectionList'),
   SegmentedControlIOS: createMockComponent('SegmentedControlIOS'),
   SliderIOS: createMockComponent('SliderIOS'),
   SnapshotViewIOS: createMockComponent('SnapshotViewIOS'),
